@@ -1,42 +1,66 @@
+@import 'normalize.css';
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --font-sans: 'Inter', sans-serif;
+    --font-serif: 'Merriweather', serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+html, body {
+    height: 100%;
+    font-family: var(--font-serif);
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    text-align: center;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: #0070f3;
+    text-decoration: none;
+    transition: color 0.2s ease;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 1.5em 0;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 4px solid #ccc;
+    padding-left: 1em;
+    margin: 1.5em 0;
+    color: #666;
 }
