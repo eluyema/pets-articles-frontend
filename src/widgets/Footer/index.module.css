@@ -1,0 +1,9 @@
+.footer {
+    padding: 20px 40px;
+    display: flex;
+    background: #3f2318;
+}
+
+.logo {
+    margin: 0;
+}
