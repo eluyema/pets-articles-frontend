@@ -8,6 +8,11 @@
   flex: 1;
 }
 
+.title {
+  color: #5c3221;
+  text-align: center;
+}
+
 @media (prefers-color-scheme: dark) {
   .page {
     --gray-rgb: 255, 255, 255;

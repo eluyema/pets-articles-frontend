@@ -7,6 +7,9 @@ export default function Home() {
         <div className={styles.page}>
             <Header/>
           <main className={styles.main}>
+              <h1 className={styles.title}>
+                  Цитата из трагедии Шекспира "Гамлет"
+              </h1>
             <article className="b-typo b-typo_post" lang="ru">
               <p>Есть многое на свете, друг Горацио, <br/> что и не снилось нашим мудрецам</p>
             </article>
